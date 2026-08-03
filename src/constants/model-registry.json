@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "match": {
+        "type": "version_gte",
+        "family": "gpt",
+        "value": "5.4"
+      },
+      "metadata": {
+        "contextWindow": 200000
+      }
+    },
+    {
+      "match": {
+        "type": "prefix",
+        "value": "gemini"
+      },
+      "metadata": {
+        "contextWindow": 1000000
+      }
+    },
+    {
+      "match": {
+        "type": "exact",
+        "value": "qwen-3.6-plus"
+      },
+      "metadata": {
+        "contextWindow": 1000000
+      }
+    }
+  ]
+}
